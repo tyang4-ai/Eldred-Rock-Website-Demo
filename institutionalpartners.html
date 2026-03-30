@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Institutional Investors | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Pillars */
+    .pillars{padding:var(--section-md) 0;background:var(--white)}
+
+    /* Closing */
+    .closing{padding:var(--section-md) 0;background:var(--white);text-align:center}
+    .closing h2{font-family:var(--font-heading);font-size:32px;color:var(--navy);margin-bottom:20px}
+    .closing p{font-size:16px;color:var(--text-body);max-width:700px;margin:0 auto;line-height:1.7}
+
+    @media(max-width:768px){
+      .pillars__grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link header__nav-link--active">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero hero--short">
+    <img src="images/business-conference.jpg" alt="Business Conference" class="hero__bg">
+    <div class="hero__overlay hero__overlay--dark"></div>
+    <div class="hero__content">
+      <h1>Institutional Investors</h1>
+      <p>20+ years of successful concentrated value investing. Founded, owned, and operated by disciplined investors.</p>
+    </div>
+  </section>
+
+  <section class="pillars">
+    <div class="container fade-in">
+      <div class="pillars__grid">
+        <div class="pillar">
+          <h3>Consistent</h3>
+          <p>One investment philosophy underpinning two strategies</p>
+        </div>
+        <div class="pillar">
+          <h3>Repeatable</h3>
+          <p>Process-driven and disciplined investing in quality businesses</p>
+        </div>
+        <div class="pillar">
+          <h3>Returns</h3>
+          <p>Low turnover strategy enables compounding to do the heavy lifting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="accordion-section" style="background-image:url('images/hero-lighthouse.jpg')">
+    <div class="accordion-section__overlay"></div>
+    <div class="container fade-in">
+      <p class="accordion-intro">We understand the high bar required to select a lesser-known manager. We welcome your diligence and scrutiny because our aligned interests, co-invested capital, and disciplined process stand up to close examination.</p>
+      <div class="accordion">
+        <div class="accordion__item">
+          <button class="accordion__header">People</button>
+          <div class="accordion__body">
+            <p>Our team is a diverse group of generalists, analysts, and portfolio managers with complementary backgrounds and a shared commitment to our disciplined investment process.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Process</button>
+          <div class="accordion__body">
+            <p>Our investment process is checklist-driven, consistent, and repeatable. We focus on what is knowable and important, applying a disciplined framework to every investment decision.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Performance</button>
+          <div class="accordion__body">
+            <p>We have delivered competitive risk-adjusted results with stellar rolling 3-, 5-, and 10-year records across our strategies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing">
+    <div class="container fade-in">
+      <h2>The Clear, Credible Choice for Institutional Allocators</h2>
+      <p>We welcome your diligence and scrutiny. Our aligned interests, co-invested capital, and disciplined process stand up to close examination. Let us demonstrate why Eldred Rock is the right partner for your institutional portfolio.</p>
+      <a href="contact.html" class="btn btn--primary" style="margin-top:32px;">Schedule a Meeting</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

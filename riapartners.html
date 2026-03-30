@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advisors &amp; Family Offices | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Elevate */
+    .elevate{padding:var(--section-sm) 0;background:var(--white)}
+    .elevate p{font-size:16px;color:var(--text-body);line-height:1.8;max-width:800px}
+
+    /* Insights */
+    .insights{padding:var(--section-md) 0;background:var(--white)}
+    .insights__title{font-family:var(--font-heading);font-size:28px;color:var(--navy);text-align:center;margin-bottom:40px}
+
+    /* Delivery */
+    .delivery{padding:var(--section-md) 0;background:var(--cream)}
+
+    @media(max-width:768px){
+      .insights__grid,.delivery__grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link header__nav-link--active">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="hero hero--short">
+    <img src="images/hero-lighthouse.jpg" alt="Eldred Rock Lighthouse" class="hero__bg">
+    <div class="hero__overlay hero__overlay--dark"></div>
+    <div class="hero__content">
+      <h1>Investment Advisors &amp; Family Offices</h1>
+      <p>Concentrated value investing in understandable businesses through tax-efficient separately managed accounts.</p>
+    </div>
+  </section>
+
+  <section class="elevate">
+    <div class="container fade-in">
+      <p>We help advisors deliver long-term value and differentiate from peers by offering access to our concentrated, process-driven value strategies through separately managed accounts.</p>
+      <div style="margin-top:24px;display:flex;gap:16px;flex-wrap:wrap;"><a href="files/US-Value-Factsheet.pdf" class="btn btn--outline">U.S. Value Factsheet</a><a href="files/International-Value-Factsheet.pdf" class="btn btn--outline">International Factsheet</a></div>
+    </div>
+  </section>
+
+  <section class="accordion-section" style="background-image:url('images/hero-lighthouse.jpg')">
+    <div class="accordion-section__overlay"></div>
+    <div class="container fade-in">
+      <div class="accordion">
+        <div class="accordion__item">
+          <button class="accordion__header">Differentiated Solutions</button>
+          <div class="accordion__body">
+            <p>We invest in exceptional companies through a disciplined, checklist-driven process that provides differentiated solutions for your clients seeking active equity management with downside protection.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Consistent Performance</button>
+          <div class="accordion__body">
+            <p>Our strategies have delivered benchmark-beating risk-adjusted returns since inception, providing advisors with a reliable performance track record to share with their clients.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Understandable Philosophy</button>
+          <div class="accordion__body">
+            <p>We invest in businesses similar to those your clients may own or understand, making our philosophy intuitive and easy to communicate to end investors.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="insights">
+    <div class="container fade-in">
+      <h2 class="insights__title">Advisor Insights Q1 2026</h2>
+      <div class="insights__grid">
+        <div class="insight-card">
+          <a href="advisorinsights-2026-no1.html">
+            <img src="images/advisorinsights/shipping-lane.png" alt="Global Inflection Point">
+            <div class="insight-card__num">01</div>
+            <div class="insight-card__title">Global Inflection Point</div>
+          </a>
+        </div>
+        <div class="insight-card">
+          <a href="advisorinsights-2026-no2.html">
+            <img src="images/advisorinsights/insight-2.jpg" alt="Simplifying ExUS Investing">
+            <div class="insight-card__num">02</div>
+            <div class="insight-card__title">Simplifying ExUS Investing</div>
+          </a>
+        </div>
+        <div class="insight-card">
+          <a href="advisorinsights-2026-no3.html">
+            <img src="images/advisorinsights/insight-3.jpg" alt="Beyond Asset Allocation">
+            <div class="insight-card__num">03</div>
+            <div class="insight-card__title">Beyond Asset Allocation</div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="delivery">
+    <div class="container fade-in">
+      <div class="delivery__grid">
+        <div class="delivery__col">
+          <h3>Direct SMA</h3>
+          <ul>
+            <li>Charles Schwab &amp; Co.</li>
+            <li>JP Morgan</li>
+            <li>State Street</li>
+            <li>Pershing</li>
+            <li>U.S. Bank</li>
+            <li>Frost Bank</li>
+          </ul>
+        </div>
+        <div class="delivery__col">
+          <h3>Model Delivery</h3>
+          <ul>
+            <li>Envestnet</li>
+            <li>Adhesion Wealth</li>
+            <li>Vestmark</li>
+            <li>BNY Mellon | Pershing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

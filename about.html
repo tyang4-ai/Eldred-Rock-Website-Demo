@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* === PAGE-SPECIFIC: Hero About variant === */
+    .hero--about .hero__overlay {
+      background: linear-gradient(to bottom, rgba(0,0,0,0.45), rgba(0,0,0,0.65));
+    }
+    .hero--about .hero__content h1 {
+      font-size: 52px;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+    .hero--about .hero__subtitle {
+      font-family: var(--font-body);
+      font-size: 18px;
+      color: rgba(255,255,255,0.9);
+      line-height: 1.6;
+    }
+
+    /* === PAGE-SPECIFIC: Numbered cards === */
+    .numbered-section {
+      padding: var(--section-md) 0;
+      background: var(--cream);
+    }
+    .numbered-section h2 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 50px;
+    }
+    .grid-2x3 {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .numbered-card {
+      background: var(--navy);
+      color: #fff;
+      padding: 36px 28px;
+      text-align: center;
+      border-radius: 4px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+    }
+    .numbered-card__number {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 48px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.3);
+      margin-bottom: 16px;
+      line-height: 1;
+    }
+    .numbered-card p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: rgba(255,255,255,0.9);
+    }
+
+    /* === PAGE-SPECIFIC: Investment framework grid === */
+    .framework-section {
+      padding: var(--section-md) 0;
+      background: var(--white);
+    }
+    .framework-section h2 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 50px;
+    }
+    .framework-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 30px;
+    }
+    .framework-item {
+      text-align: center;
+      padding: 20px;
+    }
+    .framework-item svg {
+      margin: 0 auto 20px;
+      display: block;
+    }
+    .framework-item h4 {
+      font-family: var(--font-heading);
+      font-size: 18px;
+      color: var(--navy);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .framework-item p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: var(--text-body);
+    }
+
+    /* === PAGE-SPECIFIC: Team section overrides === */
+    .team-section {
+      padding: var(--section-md) 0;
+      background: var(--cream);
+    }
+    .team-section h2 {
+      text-align: center;
+      font-size: 36px;
+      font-weight: 700;
+      color: var(--navy);
+      margin-bottom: 50px;
+    }
+    .team-card__overlay-edu {
+      font-size: 11px;
+      color: rgba(255,255,255,0.6);
+      font-style: italic;
+    }
+
+    /* === PAGE-SPECIFIC: Responsive overrides === */
+    @media (max-width: 1024px) {
+      .grid-2x3 { grid-template-columns: repeat(2, 1fr); }
+      .framework-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 768px) {
+      .grid-2x3 { grid-template-columns: 1fr; }
+      .framework-grid { grid-template-columns: 1fr; }
+      .hero--about .hero__content h1 { font-size: 36px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link header__nav-link--active">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- ============================================
+       1. HERO BANNER
+       ============================================ -->
+  <section class="hero hero--about">
+    <img src="images/hero-lighthouse.jpg" alt="Eldred Rock Lighthouse" class="hero__bg">
+    <div class="hero__overlay"></div>
+    <div class="hero__content fade-in">
+      <p class="hero__label">ABOUT ELDRED ROCK PARTNERS</p>
+      <h1>The Firm</h1>
+      <p class="hero__subtitle">We are value disciplined investment managers</p>
+      <p class="hero__subtitle">100% owner-managed.</p>
+    </div>
+  </section>
+
+  <!-- ============================================
+       2. WHAT MAKES US DIFFERENT
+       ============================================ -->
+  <section class="numbered-section">
+    <div class="container fade-in">
+      <h2>What Makes Us Different</h2>
+      <div class="grid-2x3">
+        <div class="numbered-card">
+          <span class="numbered-card__number">1</span>
+          <p>We invest with a long-term business-owner mindset.</p>
+        </div>
+        <div class="numbered-card">
+          <span class="numbered-card__number">2</span>
+          <p>We are process-focused and think in probabilities.</p>
+        </div>
+        <div class="numbered-card">
+          <span class="numbered-card__number">3</span>
+          <p>We take a capital cycle approach with a focus on supply.</p>
+        </div>
+        <div class="numbered-card">
+          <span class="numbered-card__number">4</span>
+          <p>Margin of safety and downside protection reduces investment risk.</p>
+        </div>
+        <div class="numbered-card">
+          <span class="numbered-card__number">5</span>
+          <p>Our portfolios are concentrated, exhibit low turnover, and compound returns tax efficiently.</p>
+        </div>
+        <div class="numbered-card">
+          <span class="numbered-card__number">6</span>
+          <p>We are committed to &lsquo;alpha generation&rsquo; over &lsquo;asset gathering&rsquo;.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       3. PHILOSOPHY ACCORDION
+       ============================================ -->
+  <section class="accordion-section" style="background-image: url('images/hero-lighthouse.jpg');">
+    <div class="accordion-section__overlay"></div>
+    <div class="container fade-in">
+      <h2 style="text-align:center;color:#fff;font-size:36px;font-weight:700;margin-bottom:40px;">Our Investment Philosophy</h2>
+      <div class="accordion" style="max-width:800px;margin:0 auto;">
+        <div class="accordion__item">
+          <button class="accordion__header">Our Philosophy</button>
+          <div class="accordion__body">
+            <p>We believe that investing in high-quality businesses at reasonable prices is the most reliable path to long-term wealth creation. Our investment philosophy is rooted in the principles of value investing, combined with a deep understanding of business economics and competitive dynamics. We seek to identify companies with durable competitive advantages, strong management teams, and attractive valuations relative to their intrinsic value.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Our Mindset</button>
+          <div class="accordion__body">
+            <p>We approach investing with intellectual curiosity, humility, and patience. We think in terms of probabilities rather than certainties, and we are comfortable with ambiguity. Our decision-making process is deliberate and disciplined, free from the emotional biases that often lead to poor investment outcomes. We focus on what we can control: our process, our analysis, and our temperament.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Business Ownership</button>
+          <div class="accordion__body">
+            <p>We view every stock purchase as buying a piece of a real business. This ownership mindset fundamentally changes how we evaluate investments. Rather than speculating on short-term price movements, we focus on the underlying economics of the business: its competitive position, capital allocation track record, and long-term earnings power. This perspective naturally leads to a long holding period and low portfolio turnover.</p>
+          </div>
+        </div>
+        <div class="accordion__item">
+          <button class="accordion__header">Great Businesses</button>
+          <div class="accordion__body">
+            <p>We define great businesses as those with sustainable competitive advantages, high returns on invested capital, strong free cash flow generation, and management teams that allocate capital intelligently. These businesses tend to compound value over time, creating wealth for their owners. We seek to buy these businesses when market conditions provide us with a margin of safety, ensuring we pay a fair price for exceptional quality.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       4. THE INVESTMENT FRAMEWORK
+       ============================================ -->
+  <section class="framework-section">
+    <div class="container fade-in">
+      <h2>The Investment Framework</h2>
+      <div class="framework-grid">
+        <div class="framework-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <path d="M24 4C12.95 4 4 12.95 4 24s8.95 20 20 20 20-8.95 20-20S35.05 4 24 4zm0 36c-8.84 0-16-7.16-16-16S15.16 8 24 8s16 7.16 16 16-7.16 16-16 16zm-2-26h4v12h-4zm0 16h4v4h-4z" fill="#1f2937"/>
+          </svg>
+          <h4>Industry stability</h4>
+          <p>Focus on industries with predictable dynamics and stable competitive structures.</p>
+        </div>
+        <div class="framework-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <path d="M24 4L4 14v4h40v-4L24 4zM8 22v14h6V22H8zm10 0v14h6V22h-6zm10 0v14h6V22h-6zm10 0v14h6V22h-6zM4 40h40v4H4v-4z" fill="#1f2937"/>
+          </svg>
+          <h4>Business competitive advantages</h4>
+          <p>Identify durable moats that protect long-term returns on capital.</p>
+        </div>
+        <div class="framework-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <path d="M24 4c-5.52 0-10 4.48-10 10 0 3.52 1.84 6.62 4.6 8.38L16 44h16l-2.6-21.62C32.16 20.62 34 17.52 34 14c0-5.52-4.48-10-10-10zm0 4c3.31 0 6 2.69 6 6s-2.69 6-6 6-6-2.69-6-6 2.69-6 6-6z" fill="#1f2937"/>
+          </svg>
+          <h4>Management incentives/allocation</h4>
+          <p>Evaluate leadership alignment, capital allocation discipline, and shareholder orientation.</p>
+        </div>
+        <div class="framework-item">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+            <path d="M8 8h32v4H8V8zm0 8h24v4H8v-4zm0 8h32v4H8v-4zm0 8h24v4H8v-4zm0 8h32v4H8v-4z" fill="#1f2937"/>
+          </svg>
+          <h4>Qualitative long-shelf-life information</h4>
+          <p>Prioritize enduring qualitative insights over short-term quantitative data.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       5. MEET THE TEAM
+       ============================================ -->
+  <section id="team" class="team-section">
+    <div class="container fade-in">
+      <h2>Meet the Team</h2>
+
+      <!-- Sub-group 1: Portfolio Management & Investment Analysis -->
+      <h3 class="team-category">Portfolio Management &amp; Investment Analysis</h3>
+      <div class="team-grid">
+
+        <!-- Stefan Grater -->
+        <div class="team-card">
+          <img src="images/team/stefan.jpg" alt="Stefan Grater, PhD, CFA" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Stefan Grater, PhD, CFA</div>
+            <div class="team-card__title">Portfolio Manager</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Stefan Grater, PhD, CFA</div>
+            <div class="team-card__overlay-title">Portfolio Manager</div>
+            <div class="team-card__overlay-bio">Stefan Grater is Co-founder of Eldred Rock Partners, managing its U.S. Value strategy since 2005 with a top-quartile track record. His engineering background informs a disciplined, checklist-driven investment process emphasizing a margin of safety.</div>
+            <div class="team-card__overlay-edu">UT Austin, PhD in Civil Engineering</div>
+          </div>
+        </div>
+
+        <!-- Jonathan Lewis -->
+        <div class="team-card">
+          <img src="images/team/jonathan.jpg" alt="Jonathan Lewis" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Jonathan Lewis</div>
+            <div class="team-card__title">Portfolio Manager</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Jonathan Lewis</div>
+            <div class="team-card__overlay-title">Portfolio Manager</div>
+            <div class="team-card__overlay-bio">Jonathan Lewis is Co-founder of Eldred Rock Partners and is the co-manager of the International Value strategy. A veteran of the United States Air Force and of value investing, he brings a deep understanding of how companies create and build shareholder value.</div>
+            <div class="team-card__overlay-edu">Indiana Univ, MBA in Finance &amp; Accounting</div>
+          </div>
+        </div>
+
+        <!-- Evan Smith -->
+        <div class="team-card">
+          <img src="images/team/evan.jpg" alt="Evan Smith, CFA" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Evan Smith, CFA</div>
+            <div class="team-card__title">Portfolio Manager</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Evan Smith, CFA</div>
+            <div class="team-card__overlay-title">Portfolio Manager</div>
+            <div class="team-card__overlay-bio">Evan Smith joined Eldred Rock Partners in 2024 and brings a unique perspective through diverse experience in investment management, corporate finance, and entrepreneurship.</div>
+            <div class="team-card__overlay-edu">UT Austin, BS in Mechanical Engineering</div>
+          </div>
+        </div>
+
+        <!-- Jeff Fahrenbruch -->
+        <div class="team-card">
+          <img src="images/team/jeff.jpg" alt="Jeff Fahrenbruch, CFA" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Jeff Fahrenbruch, CFA</div>
+            <div class="team-card__title">Head of Research</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Jeff Fahrenbruch, CFA</div>
+            <div class="team-card__overlay-title">Head of Research</div>
+            <div class="team-card__overlay-bio">Jeff Fahrenbruch joined Eldred Rock Partners in 2025, bringing over two decades of investment management experience from roles including portfolio manager at Barrow Hanley Global Investors and co-manager of the Oakview Capital Value Fund.</div>
+            <div class="team-card__overlay-edu">UT Austin, BBA in Finance</div>
+          </div>
+        </div>
+
+        <!-- Yifan Zhang -->
+        <div class="team-card">
+          <img src="images/team/yifan.jpg" alt="Yifan Zhang, CFA" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Yifan Zhang, CFA</div>
+            <div class="team-card__title">Portfolio Analyst</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Yifan Zhang, CFA</div>
+            <div class="team-card__overlay-title">Portfolio Analyst</div>
+            <div class="team-card__overlay-bio">Yifan Zhang joined Eldred Rock Partners in 2022, capitalizing on experience managing investments at the New York State Teachers' Retirement System and at U.S. Trust.</div>
+            <div class="team-card__overlay-edu">UT at Austin, MBA in Investment Mgmt</div>
+          </div>
+        </div>
+
+        <!-- Jody Nguyen -->
+        <div class="team-card">
+          <img src="images/team/jody.jpg" alt="Jody Nguyen" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Jody Nguyen</div>
+            <div class="team-card__title">Portfolio Data Analyst &amp; Trader</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Jody Nguyen</div>
+            <div class="team-card__overlay-title">Portfolio Data Analyst &amp; Trader</div>
+            <div class="team-card__overlay-bio">Jody Nguyen joined the team in 2025 and is responsible for portfolio administration, data management, and trading. Leveraging her background in Management Information Systems, Jody is leading Eldred Rock's initiative to enhance portfolio monitoring.</div>
+            <div class="team-card__overlay-edu">UT Austin, BBA in Mgmt Info Systems</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sub-group 2: Operations, Client Success & Business Development -->
+      <h3 class="team-category">Operations, Client Success &amp; Business Development</h3>
+      <div class="team-grid">
+
+        <!-- John Derrick -->
+        <div class="team-card">
+          <img src="images/team/john.png" alt="John Derrick, CFA" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">John Derrick, CFA</div>
+            <div class="team-card__title">Chief Operating Officer</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">John Derrick, CFA</div>
+            <div class="team-card__overlay-title">Chief Operating Officer</div>
+            <div class="team-card__overlay-bio">John Derrick joined Eldred Rock in 2023 as Chief Operating Officer. He brings 30 years in the investment management industry. He served as past president of the CFA Society of San Antonio.</div>
+            <div class="team-card__overlay-edu">UT Arlington, BBA in Finance</div>
+          </div>
+        </div>
+
+        <!-- Debra Fries -->
+        <div class="team-card">
+          <img src="images/team/debra.jpg" alt="Debra Fries" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Debra Fries</div>
+            <div class="team-card__title">Operations Manager</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Debra Fries</div>
+            <div class="team-card__overlay-title">Operations Manager</div>
+            <div class="team-card__overlay-bio">Debra Fries joined the team in 2022. With 35 years in the financial industry, she specializes in optimizing the entire client journey, from engagement and seamless onboarding to long-term service.</div>
+          </div>
+        </div>
+
+        <!-- Aldo Perez -->
+        <div class="team-card">
+          <img src="images/team/aldo.jpg" alt="Aldo Perez" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Aldo Perez</div>
+            <div class="team-card__title">Business Development Executive</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Aldo Perez</div>
+            <div class="team-card__overlay-title">Business Development Executive</div>
+            <div class="team-card__overlay-bio">Aldo Perez spearheads outreach efforts with a focus on independent advisors. His career includes launching a de novo bank branch and building out a boutique investment banking brand.</div>
+            <div class="team-card__overlay-edu">St. Mary's University, BBA in Corporate Finance</div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sub-group 3: Eldred Rock Private Capital -->
+      <h3 class="team-category">Eldred Rock Private Capital</h3>
+      <div class="team-grid">
+
+        <!-- Travis Haley -->
+        <div class="team-card">
+          <img src="images/team/travis-white-bg.jpg" alt="Travis Haley" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Travis Haley</div>
+            <div class="team-card__title">Principal</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Travis Haley</div>
+            <div class="team-card__overlay-title">Principal</div>
+            <div class="team-card__overlay-bio">Travis Haley is co-founder of Eldred Rock Private Capital. He previously served as Managing Director at Main Street Capital (NYSE: MAIN) by way of Ernst &amp; Young.</div>
+            <div class="team-card__overlay-edu">Trinity University, BS in Business</div>
+          </div>
+        </div>
+
+        <!-- Ryan Scott -->
+        <div class="team-card">
+          <img src="images/team/ryan.jpg" alt="Ryan Scott" class="team-card__photo">
+          <div class="team-card__info">
+            <div class="team-card__name">Ryan Scott</div>
+            <div class="team-card__title">Strategic Advisor &amp; Co-Founder</div>
+          </div>
+          <div class="team-card__overlay">
+            <div class="team-card__overlay-name">Ryan Scott</div>
+            <div class="team-card__overlay-title">Strategic Advisor &amp; Co-Founder</div>
+            <div class="team-card__overlay-bio">Ryan Scott is Co-Founder of Eldred Rock Partners and serves as an ongoing strategic advisor. Ryan is an outdoor enthusiast, philanthropist in The Woodlands, TX.</div>
+            <div class="team-card__overlay-edu">Trinity University, BS in Business</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Eldred Rock Partners. Reach out to our team in San Antonio, Texas.">
+  <title>Contact Us | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-specific: Hero underline */
+    .hero__content h1{text-decoration:underline;text-underline-offset:8px}
+
+    /* Page-specific: Contact info details */
+    .contact-info h3{margin-bottom:20px}
+    .contact-info p{margin-bottom:12px}
+    .contact-info a{color:var(--navy);text-decoration:underline}
+
+    /* Page-specific: Submit button variant */
+    .btn--submit{background:var(--navy);color:#fff;border:2px solid #fff}
+    .btn--submit:hover{background:var(--navy-light)}
+
+    /* Page-specific: Map section */
+    .map-section{padding:0}
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link header__nav-link--active">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/business-handshake.jpg" alt="Business handshake" class="hero__bg">
+    <div class="hero__overlay hero__overlay--dark"></div>
+    <div class="hero__content">
+      <h1>Get in Touch</h1>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section section--white">
+    <div class="container fade-in">
+      <div class="contact-grid">
+        <!-- Left Column - Contact Details -->
+        <div class="contact-info">
+          <h3>Contact Details</h3>
+          <p><strong>Address:</strong><br>
+            7330 San Pedro Ave Ste 505<br>
+            San Antonio, TX 78216
+          </p>
+          <p><strong>Phone:</strong><br>
+            <a href="tel:7262080800">(726) 208-0800</a>
+          </p>
+          <p><strong>Email:</strong><br>
+            <a href="mailto:info@eldredrock.com">info@eldredrock.com</a>
+          </p>
+        </div>
+
+        <!-- Right Column - Contact Form -->
+        <div class="contact-form">
+          <h3>Contact us</h3>
+          <form>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="first-name">First name</label>
+                <input type="text" id="first-name" name="first-name" required>
+              </div>
+              <div class="form-group">
+                <label for="last-name">Last name</label>
+                <input type="text" id="last-name" name="last-name" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+              <label for="company">Company name</label>
+              <input type="text" id="company" name="company">
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn--submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAP SECTION -->
+  <section class="map-section">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.0!2d-98.4946!3d29.5094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x865c5f1b1b1b1b1b%3A0x1234567890abcdef!2s7330+San+Pedro+Ave+Ste+505%2C+San+Antonio%2C+TX+78216!5e0!3m2!1sen!2sus!4v1700000000000"
+      width="100%"
+      height="450"
+      style="border:0;display:block;"
+      allowfullscreen=""
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      title="Eldred Rock Partners Office Location">
+    </iframe>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

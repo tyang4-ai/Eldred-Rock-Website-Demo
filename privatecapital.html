@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eldred Rock Private Capital - Dedicated to investing in outstanding companies for the long term and preserving family legacies.">
+  <title>Eldred Rock Private Capital | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-specific: Hero underline & subtitle */
+    .hero__content h1{text-decoration:underline;text-underline-offset:8px}
+    .hero__subtitle{font-size:20px;color:var(--border-light);letter-spacing:1px;line-height:1.6}
+
+    /* Page-specific: Value Props (3 column) */
+    .value-props{display:grid;grid-template-columns:repeat(3,1fr);gap:40px;text-align:center}
+    .value-prop h4{font-size:18px;margin-bottom:12px;color:var(--navy)}
+    .value-prop p{font-size:15px}
+    .value-prop__big-number{font-family:var(--font-heading);font-size:42px;font-weight:700;color:var(--navy);margin-bottom:8px}
+
+    /* Page-specific: Munger Quote (with background image) */
+    .munger-quote{position:relative;background-size:cover;background-position:center;background-attachment:fixed;padding:80px 0}
+    .munger-quote::before{content:'';position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(31,41,55,.85)}
+    .munger-quote .container{position:relative;z-index:1}
+    .munger-quote blockquote{max-width:800px;margin:0 auto;text-align:center}
+    .munger-quote blockquote p{font-family:var(--font-heading);font-size:26px;font-style:italic;color:#fff;line-height:1.6;margin-bottom:20px}
+    .munger-quote blockquote footer{font-size:18px;color:var(--text-faint);font-style:normal}
+
+    /* Page-specific: Decision Making */
+    .decision-section{text-align:center;max-width:800px;margin:0 auto}
+    .decision-section h2{margin-bottom:24px}
+    .decision-section p{font-size:16px;line-height:1.7;color:var(--text-body)}
+
+    /* Page-specific: Principals grid */
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
+    .principal__link{display:inline-block;margin-top:12px;color:var(--text-faint);text-decoration:underline;font-size:14px}
+
+    /* Page-specific: Prior Experience */
+    .experience-section{text-align:center}
+    .experience-section h2{margin-bottom:40px}
+    .experience-section img{max-width:900px;margin:0 auto}
+
+    /* Responsive */
+    @media(max-width:1024px){
+      .grid-3{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:768px){
+      .value-props,.grid-3{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link header__nav-link--active">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <img src="images/hero-lighthouse.jpg" alt="Eldred Rock Lighthouse" class="hero__bg">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>Eldred Rock Private Capital</h1>
+      <p class="hero__subtitle">Dedicated to investing in outstanding companies for the long term and preserving family legacies</p>
+    </div>
+  </section>
+
+  <!-- VALUE PROPOSITION SECTION -->
+  <section class="section section--white">
+    <div class="container fade-in">
+      <div class="value-props">
+        <!-- Investment Size -->
+        <div class="value-prop">
+          <h4>Investment Size</h4>
+          <p class="value-prop__big-number">$2-20M</p>
+        </div>
+
+        <!-- Potential Structures -->
+        <div class="value-prop">
+          <h4>Potential Structures</h4>
+          <p>Growth Capital</p>
+          <p>Recapitalizations</p>
+          <p>Management Buyouts</p>
+          <p>Leveraged Dividends</p>
+          <p>Minority / Majority</p>
+        </div>
+
+        <!-- Preferred Companies -->
+        <div class="value-prop">
+          <h4>Preferred Companies</h4>
+          <p>Durable and unique businesses</p>
+          <p>Including those tough-to-finance</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHARLIE MUNGER QUOTE SECTION -->
+  <section class="munger-quote" style="background-image:url('images/business-handshake.jpg');">
+    <div class="container">
+      <blockquote>
+        <p>&ldquo;The big money is not in the buying and selling, but in the waiting. The trick is to find a few intelligent things to do, and then be patient enough to wait for the returns to come in.&rdquo;</p>
+        <footer>&mdash; Charlie Munger</footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- DECISION MAKING SECTION -->
+  <section class="section section--light">
+    <div class="container fade-in">
+      <div class="decision-section">
+        <h2>Internally Managed Decision Making</h2>
+        <p>At Eldred Rock Private Capital, all investment decisions are made internally by our Principals. We do not rely on outside committees or advisory boards to approve transactions. This streamlined approach allows us to move quickly when the right opportunity presents itself, providing certainty of execution for business owners and their advisors. Our Principals bring decades of combined experience in evaluating, structuring, and managing private investments across a range of industries and company sizes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRINCIPALS SECTION -->
+  <section class="section section--dark">
+    <div class="container fade-in">
+      <h2 style="text-align:center;color:#fff;margin-bottom:50px;">Our Principals</h2>
+      <div class="grid-3">
+        <!-- Ryan Scott -->
+        <div class="principal">
+          <img src="images/team/ryan.jpg" alt="Ryan Scott" class="principal__photo">
+          <h3 class="principal__name">Ryan Scott</h3>
+          <p class="principal__title">Managing Director</p>
+          <p class="principal__bio">Ryan brings extensive experience in private equity and corporate finance. He focuses on sourcing, evaluating, and structuring investments in lower middle-market companies. Prior to joining Eldred Rock, Ryan held positions at leading investment firms where he developed deep expertise in operational value creation and portfolio management.</p>
+        </div>
+
+        <!-- Travis Haley -->
+        <div class="principal">
+          <img src="images/team/travis-hs.jpg" alt="Travis Haley" class="principal__photo">
+          <h3 class="principal__name">Travis Haley</h3>
+          <p class="principal__title">Managing Director</p>
+          <p class="principal__bio">Travis is an experienced investment professional with a background in private equity, venture capital, and business development. He leads deal origination and portfolio company support, drawing on his deep network and operational experience to drive long-term value creation.</p>
+          <a href="https://www.linkedin.com/in/travishaley" target="_blank" rel="noopener noreferrer" class="principal__link">LinkedIn</a>
+        </div>
+
+        <!-- Stefan F. Grater -->
+        <div class="principal">
+          <img src="images/team/stefan.jpg" alt="Stefan F. Grater" class="principal__photo">
+          <h3 class="principal__name">Stefan F. Grater</h3>
+          <p class="principal__title">Chairman &amp; CIO</p>
+          <p class="principal__bio">Stefan is the founder and Chief Investment Officer of Eldred Rock Partners. With over two decades of experience in value investing, he oversees all investment strategy and portfolio construction. Stefan&rsquo;s disciplined, long-term approach to capital allocation guides every decision made across the firm&rsquo;s public and private investment strategies.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRIOR EXPERIENCE SECTION -->
+  <section class="section section--white experience-section">
+    <div class="container fade-in">
+      <h2>Prior Experience</h2>
+      <img src="images/investment-logos.png" alt="Investment company logos representing our principals' prior experience">
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

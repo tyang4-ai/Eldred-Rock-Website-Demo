@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Eldred Rock Partners - Philosophy & Process. Disciplined value investors focused on quality, structure, and risk management.">
+  <title>Philosophy &amp; Process | Eldred Rock Partners</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    /* Page-specific: Flip Cards Grid */
+    .flip-cards-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:1000px;margin:0 auto}
+    .flip-card__front h3{font-family:var(--font-heading);font-size:24px;color:var(--navy);margin-bottom:8px}
+    .flip-card__front .flip-card__subtitle{font-size:14px;color:var(--text-muted);margin-bottom:20px;line-height:1.5}
+    .flip-card__front .btn--readmore{display:inline-block;padding:8px 24px;font-size:13px;font-weight:600;text-transform:uppercase;letter-spacing:1px;border:2px solid var(--navy);background:transparent;color:var(--navy);cursor:pointer;transition:all .3s}
+    .flip-card__front .btn--readmore:hover{background:var(--navy);color:#fff}
+    .flip-card__back h3{font-family:var(--font-heading);font-size:18px;color:var(--gold);margin-bottom:10px}
+    .flip-card__back p{font-size:13px;color:rgba(255,255,255,0.85);line-height:1.5;margin-bottom:10px}
+    .flip-list{list-style:none;padding:0;margin:0;text-align:left}
+    .flip-list li{font-size:12px;color:rgba(255,255,255,0.8);line-height:1.5;padding:5px 0 5px 16px;position:relative}
+    .flip-list li::before{content:'\2022';position:absolute;left:0;color:var(--gold);font-size:14px}
+
+    /* Page-specific: Process Cards */
+    .process-section{text-align:center}
+    .process-section h2{font-family:var(--font-heading);font-size:36px;color:var(--navy);margin-bottom:8px}
+    .process-section .process-subtitle{font-size:16px;color:var(--text-body);margin-bottom:30px}
+    .process-chevron{display:block;margin:0 auto 40px;max-width:80px}
+    .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+    .process-card{background-color:var(--navy);padding:40px 24px;text-align:center;color:#fff}
+    .process-card:nth-child(even){background-color:#2d3a4a}
+    .process-card__icon{width:48px;height:48px;margin:0 auto 20px}
+    .process-card__icon svg{width:48px;height:48px;fill:#fafafc}
+    .process-card h4{font-family:Arial,Helvetica,sans-serif;font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:#fff;margin-bottom:16px}
+    .process-card p{font-size:14px;line-height:1.7;color:#e5e7eb}
+
+    /* Page-specific: Value Investing Layout */
+    .value-investing__card{background:#fff;display:grid;grid-template-columns:1fr 1px 2fr;gap:40px;padding:50px;max-width:1000px;margin:0 auto;align-items:start}
+    .value-investing__left h3{font-family:var(--font-heading);font-size:28px;color:var(--navy);margin-bottom:12px}
+    .value-investing__left .subtitle-label{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:2px;color:var(--text-muted)}
+    .value-investing__divider{background-color:var(--border-light);width:1px;align-self:stretch}
+    .value-investing__right p{font-size:15px;line-height:1.7;color:var(--text-body);margin-bottom:16px}
+    .value-investing__right ul{list-style:disc;padding-left:20px}
+    .value-investing__right li{font-size:15px;line-height:1.7;color:var(--text-body);margin-bottom:10px}
+
+    /* Page-specific: Buffett Quote */
+    .buffett-quote{background-color:var(--navy)}
+    .buffett-quote .quote-section{max-width:900px;margin:0 auto}
+    .quote-mark{font-family:var(--font-heading);font-size:80px;color:#858990;line-height:.8;margin-bottom:0}
+
+    /* Page-specific: Hero underline */
+    .hero__content h1{text-decoration:underline;text-underline-offset:8px}
+
+    /* Responsive */
+    @media(max-width:1024px){
+      .process-grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media(max-width:768px){
+      .flip-cards-grid{grid-template-columns:1fr}
+      .process-grid{grid-template-columns:1fr}
+      .value-investing__card{grid-template-columns:1fr;padding:30px}
+      .value-investing__divider{display:none}
+      .buffett-quote .quote-section{flex-direction:column;text-align:center}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo"><img src="images/logo.png" alt="Eldred Rock Partners Logo"></a>
+      <nav class="header__nav">
+        <div class="header__nav-item">
+          <a href="#" class="header__nav-link">Who We Serve</a>
+          <div class="header__dropdown">
+            <a href="hnwpartners.html">Individuals &amp; Foundations</a>
+            <a href="riapartners.html">Advisors &amp; Family Offices</a>
+            <a href="institutionalpartners.html">Institutional Investors</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="about.html" class="header__nav-link">About</a></div>
+        <div class="header__nav-item"><a href="our-philosophy.html" class="header__nav-link header__nav-link--active">Philosophy &amp; Process</a></div>
+        <div class="header__nav-item">
+          <a href="strategies.html" class="header__nav-link">Strategies</a>
+          <div class="header__dropdown">
+            <a href="us-value.html">US Value</a>
+            <a href="intl-value.html">International Value</a>
+            <a href="privatecapital.html">Eldred Rock Private Capital</a>
+          </div>
+        </div>
+        <div class="header__nav-item"><a href="publications.html" class="header__nav-link">Publications</a></div>
+        <div class="header__nav-item"><a href="contact.html" class="header__nav-link">Contact Us</a></div>
+      </nav>
+      <button class="header__mobile-toggle" aria-label="Toggle navigation"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO BANNER -->
+  <section class="hero">
+    <img src="images/hero-lighthouse.jpg" alt="Eldred Rock Lighthouse" class="hero__bg">
+    <div class="hero__overlay"></div>
+    <div class="hero__content">
+      <h1>Philosophy &amp; Process</h1>
+      <p>Philosophy is the foundation, process builds the returns, structure tilts the probability of repeated success in our favor</p>
+    </div>
+  </section>
+
+  <!-- PHILOSOPHY PILLARS - FLIP CARDS -->
+  <section class="section section--light">
+    <div class="container fade-in">
+      <div class="flip-cards-grid">
+
+        <!-- Card 1: Quality -->
+        <div class="flip-card">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <h3>Quality</h3>
+              <p class="flip-card__subtitle">Economic Profits Drive Returns</p>
+              <span style="font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Hover to explore</span>
+            </div>
+            <div class="flip-card__back">
+              <h3>Quality</h3>
+              <p>Companies create shareholder value by generating robust economic returns and protecting their competitive advantages by strategic reinvestment:</p>
+              <ul class="flip-list">
+                <li>Competitive advantages or economic moats allow companies to create value by compounding the spread between returns and cost of capital.</li>
+                <li>Capital allocation by company management (funding internal growth, dividends, buybacks or acquisitions) is critical to compounding shareholder value.</li>
+                <li>A focus on long-term economic profits in board and management is rare but builds more shareholder value than short-term earnings management.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2: Style -->
+        <div class="flip-card">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <h3>Style</h3>
+              <p class="flip-card__subtitle">Long Term Business Owner Mindset</p>
+              <span style="font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Hover to explore</span>
+            </div>
+            <div class="flip-card__back">
+              <h3>Style</h3>
+              <p>A business owner mindset allows a long-term perspective that reduces behavioral finance mistakes:</p>
+              <ul class="flip-list">
+                <li>A long-term view lets us separate signal from noise &ndash; focus on the long-term economic profits rather than extrapolating short-term results.</li>
+                <li>Time arbitrage is buying assets with long-term value in a contrarian view to an underappreciating market.</li>
+                <li>Stocks of high-quality companies outperform low-quality stocks over the long-term.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3: Structure -->
+        <div class="flip-card">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <h3>Structure</h3>
+              <p class="flip-card__subtitle">Consistent Process Improves the Probability of Success</p>
+              <span style="font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Hover to explore</span>
+            </div>
+            <div class="flip-card__back">
+              <h3>Structure</h3>
+              <p>Investment decisions are probabilistic. The investment process has been designed to tilt the odds of success in the clients' favor:</p>
+              <ul class="flip-list">
+                <li>Concentrated portfolios outperform.</li>
+                <li>Low portfolio turnover contributes to outperformance.</li>
+                <li>Equally weighted portfolios benefit from quality and value factors.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4: Risk Management -->
+        <div class="flip-card">
+          <div class="flip-card__inner">
+            <div class="flip-card__front">
+              <h3>Risk Management</h3>
+              <p class="flip-card__subtitle">Consistent Process Improves the Probability of Success</p>
+              <span style="font-size:12px;color:var(--text-muted);text-transform:uppercase;letter-spacing:1px;">Hover to explore</span>
+            </div>
+            <div class="flip-card__back">
+              <h3>Risk Management</h3>
+              <p>Risk management is fundamental to and integrated in our process:</p>
+              <ul class="flip-list">
+                <li>Looking for a margin of safety in investments is built-in risk management by rendering an accurate estimate of the future unnecessary.</li>
+                <li>Mean reversion or cyclicality in revenue, margins and valuations creates opportunities to create higher investment returns and better protect capital.</li>
+                <li>Minimizing losses is more important than maximizing gains; a disciplined process and checklist driven decisions minimize mistakes.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCIPLINED INVESTMENT PROCESS -->
+  <section class="section section--white process-section">
+    <div class="container fade-in">
+      <h2>Disciplined Investment Process</h2>
+      <p class="process-subtitle">Focus on what drives long-term business return</p>
+      <img src="images/v-shape.png" alt="V-shape chevron" class="process-chevron">
+      <div class="process-grid">
+
+        <!-- Focus -->
+        <div class="process-card">
+          <div class="process-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <path d="M32 4C28.7 4 26 6.7 26 10v4.1C18.4 16.5 13 23.6 13 32c0 10.5 8.5 19 19 19s19-8.5 19-19c0-8.4-5.4-15.5-13-17.9V10c0-3.3-2.7-6-6-6zm0 4c1.1 0 2 .9 2 2v3.1c-0.7-0.1-1.3-0.1-2-0.1s-1.3 0-2 .1V10c0-1.1.9-2 2-2zm0 9c8.3 0 15 6.7 15 15s-6.7 15-15 15-15-6.7-15-15 6.7-15 15-15zm0 6c-5 0-9 4-9 9s4 9 9 9 9-4 9-9-4-9-9-9zm0 4c2.8 0 5 2.2 5 5s-2.2 5-5 5-5-2.2-5-5 2.2-5 5-5zM10 30H4v4h6v-4zm44 0h-6v4h6v-4zM32 54v6h0v-6z" fill="#FAFAFC"/>
+            </svg>
+          </div>
+          <h4>Focus</h4>
+          <p>The best money managers maintain a disciplined focus on the investment process (not outcome). If the investment process is good, the favorable performance will follow.</p>
+        </div>
+
+        <!-- Research -->
+        <div class="process-card">
+          <div class="process-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <path d="M26 6C15 6 6 15 6 26s9 20 20 20c4.6 0 8.8-1.6 12.2-4.2l13.5 13.5 2.8-2.8-13.5-13.5C42.4 35.8 46 30.6 46 26c0-11-9-20-20-20zm0 4c8.8 0 16 7.2 16 16s-7.2 16-16 16S10 34.8 10 26 17.2 10 26 10z" fill="#FAFAFC"/>
+            </svg>
+          </div>
+          <h4>Research</h4>
+          <p>Investment research should focus on the handful of business attributes that are most likely to drive shareholder value over time, and not simply collect data. An investment checklist improves focus on what is knowable and important.</p>
+        </div>
+
+        <!-- Peer Review -->
+        <div class="process-card">
+          <div class="process-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <path d="M14 4C10.7 4 8 6.7 8 10v44c0 3.3 2.7 6 6 6h36c3.3 0 6-2.7 6-6V10c0-3.3-2.7-6-6-6H14zm0 4h36c1.1 0 2 .9 2 2v44c0 1.1-.9 2-2 2H14c-1.1 0-2-.9-2-2V10c0-1.1.9-2 2-2zm4 8v4h28v-4H18zm0 10v4h28v-4H18zm0 10v4h28v-4H18zm0 10v4h20v-4H18z" fill="#FAFAFC"/>
+            </svg>
+          </div>
+          <h4>Peer Review</h4>
+          <p>Peer review improves decision-making by acting as a check and balance on our individual biases.</p>
+        </div>
+
+        <!-- Concentration -->
+        <div class="process-card">
+          <div class="process-card__icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+              <path d="M32 4C22.1 4 14 10.1 14 18c0 3.5 1.6 6.7 4.3 9.3-.3 3.8-1.8 6.5-1.8 6.5l-.7 1.2h1.4c4 0 7.1-1.3 9.2-2.7 1.8.4 3.7.7 5.6.7 9.9 0 18-6.1 18-14S41.9 4 32 4zm0 4c7.7 0 14 4.5 14 10s-6.3 10-14 10c-1.7 0-3.4-.2-5-.7l-1.2-.3-.9.7c-1.2.9-3 1.8-5.2 2.3.4-1.3.7-2.9.8-4.7l.1-1.2-.9-.8C17.9 22 18 19.9 18 18c0-5.5 6.3-10 14-10zm-8 30c-4 2-6 6-6 10 0 5.5 6.3 10 14 10 1.7 0 3.4-.2 5-.7l1.2-.3.9.7c1.2.9 3 1.8 5.2 2.3-.4-1.3-.7-2.9-.8-4.7l-.1-1.2.9-.8C46.1 50 50 47.9 50 46c0-1.8-1.2-3.5-3.2-4.8C44.4 44 38.6 46 32 46c-2.9 0-5.6-.4-8-1.1z" fill="#FAFAFC"/>
+            </svg>
+          </div>
+          <h4>Concentration</h4>
+          <p>Active investing adds value across all funds (even underperforming ones) when only the best ideas are used as subset portfolios. Active share and long-term holding (low turnover) combined adds alpha.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUE INVESTING SECTION -->
+  <section class="section section--light">
+    <div class="container fade-in">
+      <div class="value-investing__card">
+        <div class="value-investing__left">
+          <h3>Value Investing</h3>
+          <span class="subtitle-label">Margin of Safety</span>
+        </div>
+        <div class="value-investing__divider"></div>
+        <div class="value-investing__right">
+          <p>Value investing prioritizes margins of safety to reduce downside risk and protect invested capital:</p>
+          <ul>
+            <li>Looking for a margin of safety in investments is built-in risk management by rendering an accurate estimate of the future unnecessary. Margin of safety reduces downside risk and preserves the investor's original capital.</li>
+            <li>Mean reversion or cyclicality in revenue, margins and valuations creates opportunities to create higher investment returns and better protect capital.</li>
+            <li>Value investing is successful risk management. Portfolios must be built to withstand an uncertain future.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WARREN BUFFETT QUOTE -->
+  <section class="section--dark buffett-quote">
+    <div class="quote-section">
+      <img src="images/warren-buffett.jpg" alt="Warren Buffett" class="quote-section__photo">
+      <div>
+        <div class="quote-mark">&ldquo;</div>
+        <p class="quote-section__text">I try to invest in businesses that are so wonderful that an idiot can run them. Because sooner or later, one will.</p>
+        <p class="quote-section__attribution">&ndash; Warren Buffett</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__copyright">&copy;2026 Eldred Rock Partners, LLC</p>
+      <div class="footer__links">
+        <span>Forms:</span>
+        <a href="files/CRS.pdf">CRS</a> |
+        <a href="files/ADV.pdf">ADV</a> |
+        <a href="files/CIP-Disclosure.pdf">CIP Disclosure</a> |
+        <a href="files/Privacy-Policy.pdf">Privacy Policy</a> |
+        <a href="contact.html">Contact Us</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
