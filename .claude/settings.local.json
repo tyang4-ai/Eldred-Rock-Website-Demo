@@ -1,0 +1,17 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:www-eldredrock-com.filesusr.com)",
+      "WebFetch(domain:www.eldredrock.com)",
+      "Bash(ls:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/22317/Documents/Coding/Eldredrock website improvement/**)",
+      "Bash(done)",
+      "WebFetch(domain:www.kurtosys.com)",
+      "Bash(do)",
+      "Bash(sed -i 's|href=\"\"strategies.html#us-value\"\">US Value|href=\"\"us-value.html\"\">US Value|g' \"$f\")",
+      "Bash(sed -i 's|href=\"\"strategies.html#intl-value\"\">International Value|href=\"\"intl-value.html\"\">International Value|g' \"$f\")"
+    ]
+  }
+}

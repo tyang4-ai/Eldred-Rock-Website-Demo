@@ -1208,21 +1208,53 @@ h1, h2, h3, h4 {
     right: 0;
     background: var(--white);
     flex-direction: column;
-    padding: 20px 40px;
+    padding: 16px 24px;
     border-bottom: 1px solid var(--border);
     box-shadow: 0 8px 24px rgba(0,0,0,0.08);
     gap: 0;
+    max-height: 80vh;
+    overflow-y: auto;
   }
   .header__nav.open { display: flex; }
-  .header__nav-item { padding: 12px 0; }
+
+  /* All nav items left-aligned, consistent spacing */
+  .header__nav-item {
+    padding: 0;
+    border-bottom: 1px solid var(--border);
+  }
+  .header__nav-item:last-child { border-bottom: none; }
+
+  /* Parent nav links — left-aligned, full-width tap target */
+  .header__nav-link {
+    display: block;
+    padding: 14px 0;
+    font-size: 15px;
+    text-align: left;
+  }
+  .header__nav-link--active::after { display: none; }
+
+  /* Dropdown sub-items — indented, smaller, lighter */
   .header__dropdown {
     position: static;
     box-shadow: none;
     border: none;
-    padding: 0 0 0 16px;
+    padding: 0 0 8px 0;
     opacity: 1;
     visibility: visible;
     transform: none;
+    min-width: unset;
+  }
+  .header__dropdown a {
+    padding: 8px 0 8px 20px;
+    font-size: 14px;
+    color: var(--text-muted);
+    border-left: 2px solid var(--border-light);
+    margin-left: 4px;
+  }
+  .header__dropdown a:hover {
+    color: var(--navy);
+    border-left-color: var(--gold);
+    background: transparent;
   }
 
   /* Layout collapses */
